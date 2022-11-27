@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&family=Rubik+Microbe&display=swap');
+        *{
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Rubik Microbe', cursive;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .clockContainer{
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(to right, #2f77c5cb, #d7cc38);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 2rem;
+            font-size: 5rem;
+
+        }
+         
+        .hours, .minutes, .seconds{
+         font-size: 10%;
+      }
+  .center {
+    width: 80vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    font-size: 90vw;
+}
+
+    </style>
+</head>
+<body>
+    <div class="clockContainer">
+      <div class="center">
+        <div class="hours"></div>
+        <div class="minutes"></div>
+        <div class="seconds"></div>
+</div>
+    </div>
+
+
+    <script>
+        let hours = document.querySelector(".hours");
+        let minutes = document.querySelector(".minutes");
+        let seconds = document.querySelector(".seconds");
+
+
+
+        setInterval(() =>{
+            let date = new Date();
+
+            let hTime = date.getHours();
+            let mTime = date.getMinutes();
+            let sTime = date.getSeconds();
+
+            if(hTime > 12){ 
+                hTime = hTime-12;
+                sTime = sTime+" PM"
+            }else {
+                sTime = sTime+" AM"
+            }
+        
+
+            seconds.innerHTML = sTime;
+            minutes.innerHTML = mTime+" :";
+            hours.innerHTML = hTime+" :";
+
+        }, 1000)
+
+    </script>
+</body>
+</html>
