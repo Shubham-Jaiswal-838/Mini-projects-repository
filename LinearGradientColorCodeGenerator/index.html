@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient color generator</title>
+
+    <style>
+      *{
+         padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .change {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        row-gap: 2rem;
+        align-items: center;
+        flex-direction: column;
+        background: linear-gradient(to right, #0000ff, #add8e6);
+      }
+
+      h1 {
+        color: white;
+      }
+      .inline {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+      }
+      .color1 {
+        margin: 0 1rem 0 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="change">
+      <h1>Gradient color generator</h1>
+      <h3>linear-gradient(to right, rgb(249, 185, 195), rgb(0, 255, 255));</h3>
+      <div class="inline">
+        <h2>Current Colors for Gradient Background:</h2>
+        <!-- Default color for gradient -->
+        <input class="color1" type="color" value="#ffc0cb" />
+        <input class="color2" type="color" value="#00ffff" />
+      </div>
+    </div>
+
+    <script>
+      var css = document.querySelector("h3");
+      var color1 = document.querySelector(".color1");
+      var color2 = document.querySelector(".color2");
+      var container = document.querySelector(".change");
+
+      // Changing color for the gradient
+
+      function changeGradient() {
+        container.style.background =
+          "linear-gradient(to right, " +
+          color1.value +
+          ", " +
+          color2.value +
+          ")";
+
+        css.textContent = container.style.background + ";";
+      }
+
+      color1.addEventListener("input", changeGradient);
+      color2.addEventListener("input", changeGradient);
+    </script>
+  </body>
+</html>
