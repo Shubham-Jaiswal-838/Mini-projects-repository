@@ -1,0 +1,90 @@
+.box {
+    border: 2px solid black;
+    padding: 12px;
+    border-radius: 6px;
+    max-width: 500px;
+    text-align: center;
+    margin: 10px;
+}
+
+.box .box-title {
+    font-size: x-large;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+.box .box-subtitle {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.colors {
+    min-height: 100px;
+    margin: 10px;
+}
+
+.txt {
+    min-width: 200px;
+    max-width: 200px;
+    margin: 10px;
+    min-height: 100px;
+    padding: 10px;
+}
+
+.color-box {
+    min-width: 50px !important;
+    min-height: 25px !important;
+    border-radius: 5px !important;
+}
+
+.progress {
+    max-width: 500px;
+    border: 2px solid black;
+    border-radius: 15px !important;
+    padding: 0% !important;
+    margin-right: 10px;
+}
+
+.filters {
+    margin: 20px;
+}
+
+.button {
+    margin: 20px;
+    min-width: 200px;
+}
+
+.form {
+    padding: 20px;
+}
+
+.remove {
+    display: none ;
+}
+
+
+.drawer {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    -webkit-box-shadow: -9px 4px 32px -15px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -9px 4px 32px -15px rgba(0, 0, 0, 1);
+    box-shadow: -9px 4px 32px -15px rgba(0, 0, 0, 1);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+
+.drawer .closebtn {
+    position: absolute;
+    color: black;
+    text-decoration: none;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
