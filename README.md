@@ -8,3 +8,5 @@ Hello there!, this repo is made to deploy mini projects with codes
 ## Linear Gradient Color Code Generator: https://brilliant-figolla-b6a247.netlify.app/
 
 ## Creatives Preview: https://benevolent-duckanoo-664911.netlify.app/
+
+## frontend-menu-drag&drop: https://delightful-peony-225e80.netlify.app/
