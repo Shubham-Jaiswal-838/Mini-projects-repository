@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shopping Cart</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Grocery List</h1><br/>
+            Enter Item Name: <input id="item-name-input" type="text"><br/><br/>
+            Enter Item Price : <input id="item-price-input" type="number"><br/><br/>
+            <button class="btn btn-secondary" onClick="insertItem();">Add Grocery Item</button><br/><br/>
+
+
+            <table class="table"> 
+                    <tr>
+                        <th>Sr. No.</th>
+                        <th>Title</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                            <td colspan="2">Total</td>
+                            <td  data-ns-test="grandTotal">0</td>
+                    </tr>
+
+            </table>
+        </div>
+
+        <script src="shopping_cart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    </body>
+</html>
