@@ -12,3 +12,5 @@ Hello there!, this repo is made to deploy mini projects with codes
 #### frontend-menu-drag&drop: https://delightful-peony-225e80.netlify.app/
 
 #### Shopping Cart: https://resilient-kangaroo-29a80a.netlify.app/
+
+#### Frontend Search Strings: https://dulcet-frangollo-97d670.netlify.app/
