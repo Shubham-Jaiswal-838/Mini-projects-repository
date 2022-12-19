@@ -14,3 +14,6 @@ Hello there!, this repo is made to deploy mini projects with codes
 #### Shopping Cart: https://resilient-kangaroo-29a80a.netlify.app/
 
 #### Frontend Search Strings: https://dulcet-frangollo-97d670.netlify.app/
+
+#### Word highlighter JS: https://unrivaled-custard-8edcc9.netlify.app/
+
